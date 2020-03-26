@@ -73,4 +73,8 @@ section h2 {
 
 .bubble {
     position: absolute;
+    z-index: -2;
+    background: linear-gradient(to right top, #f46b45, #eea849);
+    transform: scale(2);
+    transition: all 0.5s ease;
 }
