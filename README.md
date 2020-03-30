@@ -5,3 +5,5 @@
 #app003 - Slider <br>
 #app004 - Login form <br>
 #app005 - Neon light button animation <br>
+#app006 - Landing page<br>
+#app007 - Loader(ring)<br>
