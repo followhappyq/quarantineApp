@@ -42,8 +42,7 @@ body {
   text-transform: uppercase;
 }
 
-.login-box input[type="text"],
-.login-box input[type="password"] {
+.login-input {
   border: 0;
   display: block;
   background: none;
@@ -81,5 +80,8 @@ body {
 
 .login-box input[type="submit"]:hover {
   background: #2ec;
-  color: black;
+}
+
+.login-input-error {
+  border-color: red;
 }

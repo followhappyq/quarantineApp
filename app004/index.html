@@ -5,15 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
 
-    <title>Vigenere cipher</title>
+    <title>Login form</title>
   </head>
   <body>
     <div class="login-box">
       <h1 class="login">Login</h1>
       <div class="input-fields">
-        <input type="text" placeholder="Username" class="name" />
-        <input type="password" placeholder="Password" class="password" />
-        <input type="submit" value="Sign in" class="login-button" />
+        <form action="submit" id="form">
+          <input
+            type="text"
+            placeholder="Username"
+            id="name"
+            class="login-input"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            id="password"
+            class="login-input"
+          />
+          <input type="submit" value="Sign in" id="login-button" />
+        </form>
       </div>
     </div>
     <script src="./app.js"></script>
