@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./assets/img/background.jpg);
+  font-family: "Comic Neue", cursive;
+  color: white;
+  background-size: cover;
+}
+
+.container-typing {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  padding-left: 30%;
+}
+
+.typing {
+  margin-left: 10px;
+}
+
+.typing::after {
+  content: "";
+  width: 1px;
+  height: 3.5%;
+  border-right: 2px solid white;
+  animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
