@@ -7,17 +7,29 @@
       href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./src/loader/loader.css" />
     <title>Document</title>
   </head>
   <body>
+    <div class="preloader-container">
+      <div class="loader-container">
+        <div class="loader loader1">
+          <div class="circle"></div>
+        </div>
+        <div class="loader loader2">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
     <div class="location">
-      <h1 class="location-timezone">Timezone</h1>
+      <h1 class="location-timezone"></h1>
       <canvas class="icon" width="128" height="128"></canvas>
     </div>
     <div class="temperature">
-      <h2 class="temperature-degree">22</h2>
-      <div class="temperature-description">Cold</div>
+      <h2 class="temperature-degree"></h2>
+      <div class="temperature-description"></div>
     </div>
     <script src="./src/script/skycons.js"></script>
     <script src="./app.js"></script>

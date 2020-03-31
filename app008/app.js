@@ -1,4 +1,6 @@
 window.addEventListener("load", () => {
+  let loader = document.querySelector(".preloader-container");
+
   let long;
   let lat;
   let temperatureDescription = document.querySelector(
@@ -11,6 +13,7 @@ window.addEventListener("load", () => {
     navigator.geolocation.getCurrentPosition(position => {
       long = position.coords.longitude;
       lat = position.coords.latitude;
+      loader.style.visibility = "hidden";
 
       const proxy = `https://cors-anywhere.herokuapp.com/`;
       const api = `${proxy}https://api.darksky.net/forecast/a0649363ce478d7e542996beff8f43c7/${lat},${long}`;
@@ -31,6 +34,8 @@ window.addEventListener("load", () => {
           selectIcons(icon, document.querySelector(".icon"));
         });
     });
+  } else {
+    console.log(1);
   }
 
   function selectIcons(icon, iconID) {
