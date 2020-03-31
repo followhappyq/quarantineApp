@@ -9,3 +9,4 @@
 #app007 - Loader(ring)<br>
 #app008 - weather app(https://darksky.net/) <br>
 #app009 - Dropdown menu <br>
+#app010 - Typewriting effect<br>
